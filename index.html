@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="root">
+        <input v-model="nome" type="text">
+        <p>{{ nome }}</p>
+        <input v-model="messaggio" type="text">
+        <h1>{{ messaggio }}</h1>
+        <h1 :class="mieClassi">ciao pippo</h1>
+        <button @click="cambio">clicca qui</button>
+        <h1>{{ click }} </h1>
+        <button @click="incremento">cliccami</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script src="main.js"></script>
+</body>
+</html>
